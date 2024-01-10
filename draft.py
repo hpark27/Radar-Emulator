@@ -13,7 +13,6 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 # Function to animate line rotation
 def animate(i):
     global lineangle, numAxes 
-    global distance, angle
 
     if round(lineangle,12)==round(2*np.pi,12): # when angle is 360 deg
         lineangle = 0                          # reset deg into 0 deg
