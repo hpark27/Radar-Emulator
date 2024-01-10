@@ -3,7 +3,6 @@ import numpy as np
 from tkinter import*
 import tkinter as tk
 import matplotlib
-import functions as funcs
 matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 import matplotlib.ticker as tic
@@ -48,13 +47,6 @@ def stop():
 
 ### system
 lineangle = 0      # line angle at default condition
-
-# create target positions - random positions
-distance, angle = funcs.randposition()
-
-# sort target position
-distance.sort()
-angle.sort()
 
 ### TKInter GUI Window
 window = tk.Tk()                                   # initialize window
