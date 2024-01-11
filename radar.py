@@ -50,9 +50,8 @@ def animate(i):
 def start(event):
     global anim, begin, resume, running
 
-    print('Start button clicked')
-
     if begin:    # start
+        print('Start button clicked')
         begin = False
         running = True
         startbtn.label.set_text('Pause')
